@@ -23,5 +23,5 @@ spec:
       application: aia-backend
       access: readwrite # read, write, readwrite
     - team: paw
-      application: jonas.maccyber.enge@nav.no
+      application: maccyber
       access: read
