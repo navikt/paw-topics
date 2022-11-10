@@ -54,7 +54,7 @@ Produser en melding med `kcat`, du blir da sendt inn i et interaktivt shell. Avs
 Eksempelet bruker topicen `paw.testplayground`
 
 ```sh
-$ kafkacat -F kcat.conf -t paw.testplayground -P
+$ kafkacat -F /tmp/aiven-secret-2613059212/kcat.conf -t paw.testplayground -P
 % Reading configuration from file kcat.conf
 {"message":"hello paw"}
 ```
@@ -62,10 +62,17 @@ $ kafkacat -F kcat.conf -t paw.testplayground -P
 #### Consumer melding
 
 ```sh
-$ kafkacat -F kcat.conf -t paw.testplayground -C
+$ kafkacat -F /tmp/aiven-secret-2613059212/kcat.conf -t paw.testplayground -C
 % Reading configuration from file kcat.conf
 {"message":"hello paw"}
 % Reached end of topic paw.testplayground [0] at offset 1
+```
+
+#### Rydd opp filer
+
+```sh
+$ nais aiven tidy
+2022/11/10 19:28:17 tidy: /tmp/aiven-secret-2613059212
 ```
 
 # Kilder
