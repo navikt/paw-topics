@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy-test-topic-to-dev:
-    name: Deploy krav-topic to dev
+    name: Deploy test-topic to dev
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
