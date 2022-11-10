@@ -24,4 +24,4 @@ spec:
       access: readwrite # read, write, readwrite
     - team: paw
       application: maccyber
-      access: read
+      access: readwrite
