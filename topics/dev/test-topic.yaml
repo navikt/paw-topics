@@ -19,9 +19,12 @@ spec:
     retentionBytes: -1 # -1 means unlimited
     retentionHours: 168 # -1 means unlimited
   acl:
-    - team: paw
-      application: aia-backend
+    - application: aia-backend
+      team: paw
       access: readwrite # read, write, readwrite
-    - team: paw
-      application: maccyber
+    - application: paw-reaktiver-arbeidssoker
+      team: paw
+      access: read
+    - application: maccyber
+      team: paw
       access: readwrite
